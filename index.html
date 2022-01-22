@@ -1,0 +1,255 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+
+    <!-- Replace the Bootstrap CSS with the
+         Bootstrap-Dark Variant CSS -->
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-night.min.css" rel="stylesheet" media="(prefers-color-scheme: dark)">
+    <!-- and then the primary CSS last ...
+         in this case the (original) Bootstrap Variant CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap.min.css" rel="stylesheet" media="(prefers-color-scheme: light)">
+
+
+    <!-- Bootstrap CSS
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <style>
+    body {
+
+      font-family: 'Roboto Condensed', sans-serif !important;
+    }
+    .rounded {
+      width: 200px;
+      height: 200px;
+    }
+    .container {
+      padding: 16px;
+    }
+
+    img {
+      padding: 10px;
+    }
+
+  </style>
+    <title>The EVM Bee</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <!-- Content here -->
+      <div class="container">
+
+      <h1>The EVM Bee</h1>
+
+     </div>
+
+
+      <div class="container">
+      <img src="images/bee.png" class="rounded float-start" alt="dBee">
+      <div class="container">
+        <h2>Loredana Cirstea: dev@EVM</h2>
+      <div class="h5">
+      <p>Contact: <a href="mailto:loredana.cirstea@gmail.com" target="_blank">loredana.cirstea@gmail.com</a></p>
+      <p>Demos: <a href="https://www.youtube.com/c/LoredanaCirstea" target="_blank">https://www.youtube.com/c/LoredanaCirstea</a></p>
+      <p>GitHub: <a href="https://github.com/loredanacirstea" target="_blank">https://github.com/loredanacirstea</a></p>
+      <p>Articles: <a href="https://github.com/loredanacirstea" target="_blank">https://github.com/loredanacirstea/articles</a> and <a href="https://loredanacirstea.medium.com/" target="_blank">https://loredanacirstea.medium.com/</a></p>
+      </div>
+
+      </div>
+    </div>
+
+
+    <div class="container">
+    <img src="images/work.png" class="rounded float-start" alt="dWork">
+    <div class="container">
+      <h2>Work Highlights</h2>
+      <div class="h4">
+        <ul class="h4">
+          <li>
+            I programmed the first robot paid for each move with ETH. Demoed it onstage at <a href="https://youtu.be/eRuz34XXGtc" target="_blank">DevCon 3 (Cancun) in 2017</a>.
+          </li>
+          <li>
+            I am developing the only EVM language that is both compiled and interpreted to/by the EVM (and WASM): Taylor.
+          </li>
+          <li>
+            I am developing the only EVM native Database: dTypeDB.
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+
+
+    <div class="container">
+      <img src="images/hex-taylor.png" class="rounded float-end" alt="dTaylor">
+      <div class="container">
+        <h2>Taylor Language: Interpreted/Compiled (by/to the EVM)</h2>
+        <div class="h5">
+          <a href="https://www.youtube.com/playlist?list=PL323JufuD9JAgnda2E8mGn_GDcD5ef4mH" target="_blank">View demos</a>, <a href="https://github.com/loredanacirstea/taylor" target="_blank">GitHub (ver. 1)</a>
+          <p>Taylor is the first (and still only) interpreted language by the EVM. The idea evolved from our Pipeline on-chain graph interpreter, which allowed complex flow-based transaction composition with a graphical interface. Taylor is a Lisp-like functional language with variables, conditionals, loops, macros and a series of plugins depending on the substrate language (EVM, JavaScript/TypeScript, etc.). Its core is implemented in the EVM as a recursive, typed engine. The main idea, simplified, is presented in the series <a href="https://loredanacirstea.medium.com/from-stack-machine-to-functional-machine-step-3-higher-order-functions-18fb751066ec" target="_blank">From Stack Machine to Functional Machine</a>.
+          Taylor has a compiled counterpart. taylor-evm is an efficient low-level language that compiles to EVM assembly and bytecode. It has already been used to implement several projects, including the Ethereum Data Service.</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <img src="images/hex-db.png" class="rounded float-start" alt="dDB">
+      <div class="container">
+        <h2>dTypeDB (first DB3 database): EVM native DB</h2>
+        <div class="h5">
+          <a href="https://www.youtube.com/playlist?list=PL323JufuD9JCBlpwf_J29AmO6_T134uLi" target="_blank">View demos</a>
+          <p>
+            dType is a Decentralized (dependent) Type System for an eventual Global OS, for the EVM. And dTypeDB is a typed database that uses dType for type checking and other opperations. This database is presently the backbone of our Ethereum Data Service [EDS]. It was developed using my Taylor-compiled language for efficency reasons.
+            Presently dTypeDB can view decentralized objects encoded across multiple contracts and output them decoded to string in the Yaml format. dTypeDB will be ported to Wasm and to a set of classic (db2) databases. </p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="container">
+      <img src="images/sci-evm.png" class="rounded float-end" alt="dTaylor">
+      <div class="container">
+        <h2>The Scientific EVM</h2>
+        <div class="h5">
+          <a href="https://www.youtube.com/playlist?list=PL323JufuD9JBRVKaFOTUIwg_ikavRH3r7" target="_blank">View demos</a>
+          <p>
+          I have developed a library on the EVM that can do arythmeric opperation on arbitrary-long uints: Tally. And another one, based on Tally, that works with rational numbers of arbitrary length: Quasi. The plan is to continue with real numbers (fixed and arbitrary precision) and, maybe with complex numbers. The goal is to have contracts that can be used for scientific purposes (a la python) and to supplement such power with a database of constants of interest and partial results. I imagine that the blockchain could be used to prove mathematical correctness of itself (where its operations are limited by the dimesions of the slot or stack).
+         </p>
+         </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <img src="images/evm-int.png" class="rounded float-start" alt="dInt">
+      <div class="container">
+        <h2>EVM Interpreter</h2>
+        <div class="h5">
+          <a href="https://www.youtube.com/playlist?list=PL323JufuD9JCE_pGDLHJN-wVBpCPc9Q1G" target="_blank">View demos</a>
+          <p>
+          A set of EVM interpreters with full support for all opcodes come in many flavors: state changing opcodes can be treated in place, or executed through a delegated mechanism, or logged, or used "purely" for off-chain verfication (pun intended). I developed macroASM - a macro-assembly language for the EVM to build the first versions of these interpreters. taylor-evm will be used for the next version. Also an extended set of EVM opcodes will be introduced for something we are coining as the Extended Ethereum Virtual Machine [EEVM]. </p>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <img src="images/dFun.png" class="rounded float-end" alt="dObj">
+      <div class="container">
+        <h2>The Decentralized Object/Function</h2>
+        <div class="h5">
+          <a href="https://www.youtube.com/playlist?list=PL323JufuD9JCBlpwf_J29AmO6_T134uLi" target="_blank">View demos</a>
+          <p>
+          Both are strong arguments for the implementation of the future Provable Web.
+          These patterns are part of a network of many smart contracts with interweaved functionality, each containing thousands of functions. We made a system to link these contracts with one another, unidirectional or bidirectional. Each contract acts as a proxy for other contracts, as a subsystem root. And you can have multiple subsystems, with different roots, where the execution is forwarded in a transparent manner.
+          The Ethereum Decentralized (Deep) Object is fully typed and with deterministic behavior, fully transparent and traversable, it can be decoded and hydrated/enriched off-chain. And it is semantically connected with other deep objects.
+        </p>
+          </div>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <img src="images/swap.png" class="rounded float-start" alt="dSwap">
+      <div class="container">
+        <h2>NFT Swap</h2>
+        <div class="h5">
+          <a href="https://www.youtube.com/playlist?list=PL323JufuD9JDJ83RP017mPTNPHcYhk6-a" target="_blank">View demos</a>
+          <p>
+          The first NFT many-to-many atomic swap protocol, with decentralized administration. Users can swap 1 or more NFTs in exchange for 1 or more NFTs from different contracts. The swap is done between two owners. This system is built on dTypeDB and the Ethereum Data Service. </p>
+          <p>Since the EDS is a decentralized system, participants can even add their own NFT contracts to the swap market.</p>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <img src="images/search.png" class="rounded float-end" alt="dSearch">
+      <div class="container">
+        <h2>Decentralized Search</h2>
+        <div class="h5">
+          <p>
+          (This subproject is not yet video demoed.) I am implementing several types of search into the EVM storage. The strategies are stack-optimized for the EVM using the compiled Taylor. This will be used in dTypeDB and become the most efficient EVM database search. It is presently tested as dFunction and that means that any contract that becomes member of the EDS constellation of contracts, will be able to forward search to any other constellation member. It is designed to play an important role in feature introspection and discovery in EDS. </p>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <img src="images/hex-hist.png" class="rounded float-start" alt="Historical">
+      <div class="container">
+        <h2>Earlier Work</h2>
+        <p class="h4">
+          <ul class="h5">
+            <li>Pipeline: the Visual EVM Language. (<a href="https://www.youtube.com/playlist?list=PL323JufuD9JAyaYCEvrnQ5yOAc3ukuNyF" target="_blank">videos</a>, <a href="https://github.com/pipeos-one/pipeline" target="_blank">github</a>)</li>
+            <li>Cometh: the most complex EVM smart contract debugger. (<a href="https://www.youtube.com/playlist?list=PL323JufuD9JAozCnyMWKt38wa-A_sNaFo" target="_blank">videos</a>)</li>
+            <li>ChainLens: a web2 database of Ethereum contracts with emphasis on I/O types. (<a href="https://www.youtube.com/playlist?list=PL323JufuD9JCV67-vSQdb1uvLudyv8sXz" target="_blank">videos</a>, <a href="https://github.com/pipeos-one/chainlens" target="_blank">github</a>)</li>
+            <li>dType: EVM-native dependent type system. (<a href="https://www.youtube.com/playlist?list=PL323JufuD9JC46yClCf5fdaEX17kocem7" target="_blank">videos</a>, <a href="https://github.com/pipeos-one/dType" target="_blank">github</a>)</li>
+            <li>Seth: semantic database for Ethereum. (<a href="https://www.youtube.com/playlist?list=PL323JufuD9JBKj8CQmVYk3HUO15C4ONf8" target="_blank">videos</a>)</li>
+            <li>eWasm on Js: a Wasm implementation of EVM. (<a href="https://github.com/loredanacirstea/ewasm-jsvm" target="_blank">github</a>)</li>
+            <li>microRaiden: a many2one payment system for Ethereum (maybe the very first one to scale the chain). (<a href="https://www.youtube.com/playlist?list=PL323JufuD9JA-MheRzuab_gUztg7PBh5K" target="_blank">videos</a>, <a href="https://github.com/raiden-network/microraiden" target="_blank">github</a>)</li>
+            <li>Raiden Network: smart contracts & protocol for an off-chain, scalable and low-latency micropayment solution. (<a href="https://www.youtube.com/playlist?list=PL323JufuD9JA-MheRzuab_gUztg7PBh5K" target="_blank">videos</a>, <a href="https://github.com/raiden-network/raiden-contracts" target="_blank">github</a>)</li>
+            <li>Golden Gate Bridge: a decentralized bridge for EVM<->EVM blockchains. (<a href="https://youtu.be/WD_2tuX9jeg" target="_blank">videos</a>, <a href="https://github.com/loredanacirstea/goldengate" target="_blank">github</a>)</li>
+            <li>Authored EIPs: <a href="https://eips.ethereum.org/EIPS/eip-1900" target="_blank">EIP-1900: dType - Decentralized Type System for EVM</a>, <a href="https://eips.ethereum.org/EIPS/eip-1921" target="_blank">EIP-1921: dType Functions Extension</a>, <a href="https://eips.ethereum.org/EIPS/eip-2157" target="_blank">EIP-2157: dType Storage Extension</a>, <a href="https://eips.ethereum.org/EIPS/eip-2193" target="_blank">EIP-2193: dType Alias Extension</a>, <a href="https://eips.ethereum.org/EIPS/eip-2256" target="_blank">EIP-2256: wallet_getOwnedAssets JSON-RPC Method</a> </li>
+            <li>ethresear.ch:
+            <a href="https://ethresear.ch/t/dtype-decentralized-type-system-on-ethereum-2-0/5721" target="_blank">dType (Decentralized Type System) on Ethereum 2.0</a>
+            <a href="https://ethresear.ch/t/a-master-shard-to-account-for-ethereum-2-0-global-scope/5730" target="_blank">A Master Shard to Account for Ethereum 2.0 Global Scope</a>
+            <a href="https://ethresear.ch/t/libra-ee-and-shadow-shard-and-general-cross-chain-data-bridging/5919" target="_blank">Libra EE and Shadow Shard (and general cross-chain data bridging)</a>
+            <a href="https://ethresear.ch/t/data-load-balancing-of-shards/5961" target="_blank">Data/Load Balancing of Shards</a>
+            </li>
+          </ul>
+    </p>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <img src="images/hex-laurel.png" class="rounded float-start" alt="Laurel">
+      <div class="container">
+        <h2>Leadership</h2>
+        <div class="h5">
+          <a href="https://www.youtube.com/playlist?list=PL323JufuD9JBzv9Spl6KcFMB631ZgcFPU" target="_blank">View demos</a>
+          <p>
+          I presently work more than 80 hours every week as a proven volunteer for the EVM. I have programmed the first infrastructure that can prove effort by volunteers and gives them governance effects as result of their quality and quantity of effort. I lead this project that is called the Laurel Project (<a href="https://www.reddit.com/r/provable_laurel/" target="_blank">reddit</a>, <a href="https://www.linkedin.com/company/the-laurel-project" target="_blank">linkedin</a>, <a href="https://twitter.com/thelaurel_bot" target="_blank">twitter</a>)
+          <br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="container">
+      <i>&copy; 2022 Loredana Cirstea</i>
+      </div>
+
+
+
+
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
